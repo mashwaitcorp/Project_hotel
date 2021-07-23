@@ -18,6 +18,7 @@ class PricePlan(models.Model):
     sat_d = models.CharField(max_length=50,null=False, blank=True, verbose_name="Samedi")
     description = models.TextField(null=False)
 
+
     class Meta:
         verbose_name = "Plan de prix"
         verbose_name_plural = "Plans de prix"
