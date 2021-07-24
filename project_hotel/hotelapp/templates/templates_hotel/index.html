@@ -14,7 +14,7 @@
     <h1>Welcom to karibu hotel</h1>
 
     <form method="POST">
-        {% csrf_token %} {{form.as_p}}
+        {% csrf_token %} {{form.as_p}} {{cat_form.as_p}}
 
         <input type="submit" value="Ajouter un hotel">
     </form>
