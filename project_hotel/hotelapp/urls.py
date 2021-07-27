@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import HotelCreate
+from .views.hotel_view import ArticleHome
 
 urlpatterns = [
    
-    path('', HotelCreate.as_view(), name="create"),
+    path('', ArticleHome.as_view(), name="create"),
     
 ]
