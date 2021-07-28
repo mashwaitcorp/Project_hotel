@@ -1,136 +1,116 @@
 {% load static %}
-<!-- Page Preloder -->
-<div id="preloder">
+<!-- Preloader -->
+<div id="preloader">
     <div class="loader"></div>
 </div>
+<!-- /Preloader -->
 
-<!-- Offcanvas Menu Section Begin -->
-<div class="offcanvas-menu-overlay"></div>
-<div class="canvas-open">
-    <i class="icon_menu"></i>
-</div>
-<div class="offcanvas-menu-wrapper">
-    <div class="canvas-close">
-        <i class="icon_close"></i>
-    </div>
-    <div class="search-icon  search-switch">
-        <i class="icon_search"></i>
-    </div>
-    <div class="header-configure-area">
-        <div class="language-option">
-            <img src="{% static 'img/flag.jpg'%}" alt="">
-            <span>EN <i class="fa fa-angle-down"></i></span>
-            <div class="flag-dropdown">
-                <ul>
-                    <li><a href="#">Zi</a></li>
-                    <li><a href="#">Fr</a></li>
-                </ul>
-            </div>
+<!-- Header Area Start -->
+<header class="header-area">
+    <!-- Search Form -->
+    <div class="search-form d-flex align-items-center">
+        <div class="container">
+            <form action="index.html" method="get">
+                <input type="search" name="search-form-input" id="searchFormInput" placeholder="Type your keyword ...">
+                <button type="submit"><i class="icon_search"></i></button>
+            </form>
         </div>
-        <a href="#" class="bk-btn">Booking Now</a>
     </div>
-    <nav class="mainmenu mobile-menu">
-        <ul>
-            <li class="active"><a href="./index.html">Home</a></li>
-            <li><a href="./rooms.html">Rooms</a></li>
-            <li><a href="./about-us.html">About Us</a></li>
-            <li><a href="./pages.html">Pages</a>
-                <ul class="dropdown">
-                    <li><a href="./room-details.html">Room Details</a></li>
-                    <li><a href="#">Deluxe Room</a></li>
-                    <li><a href="#">Family Room</a></li>
-                    <li><a href="#">Premium Room</a></li>
-                </ul>
-            </li>
-            <li><a href="./blog.html">News</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div id="mobile-menu-wrap"></div>
-    <div class="top-social">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-tripadvisor"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-    </div>
-    <ul class="top-widget">
-        <li><i class="fa fa-phone"></i> (12) 345 67890</li>
-        <li><i class="fa fa-envelope"></i> info.colorlib@gmail.com</li>
-    </ul>
-</div>
-<!-- Offcanvas Menu Section End -->
 
-<!-- Header Section Begin -->
-<header class="header-section">
-    <div class="top-nav">
+    <!-- Top Header Area Start -->
+    <div class="top-header-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <ul class="tn-left">
-                        <li><i class="fa fa-phone"></i> (12) 345 67890</li>
-                        <li><i class="fa fa-envelope"></i> info.colorlib@gmail.com</li>
-                    </ul>
+
+                <div class="col-6">
+                    <div class="top-header-content">
+                        <a href="#"><i class="icon_phone"></i> <span>(123) 456-789-1230</span></a>
+                        <a href="#"><i class="icon_mail"></i> <span>info.colorlib@gmail.com</span></a>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="tn-right">
-                        <div class="top-social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-tripadvisor"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                        <a href="#" class="bk-btn">Booking Now</a>
-                        <div class="language-option">
-                            <img src="{% static 'img/flag.jpg'%}" alt="">
-                            <span>EN <i class="fa fa-angle-down"></i></span>
-                            <div class="flag-dropdown">
-                                <ul>
-                                    <li><a href="#">Zi</a></li>
-                                    <li><a href="#">Fr</a></li>
-                                </ul>
-                            </div>
+
+                <div class="col-6">
+                    <div class="top-header-content">
+                        <!-- Top Social Area -->
+                        <div class="top-social-area ml-auto">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <div class="menu-item">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="logo">
-                        <a href="./index.html">
-                            <img src="{% static 'img/logo.png'%}" alt="">
-                        </a>
+    <!-- Top Header Area End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="robertoNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="nav-menu">
-                        <nav class="mainmenu">
-                            <ul>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+                        <!-- Menu Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
                                 <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./rooms.html">Rooms</a></li>
-                                <li><a href="./about-us.html">About Us</a></li>
-                                <li><a href="./pages.html">Pages</a>
+                                <li><a href="./room.html">Rooms</a></li>
+                                <li><a href="./about.html">About Us</a></li>
+                                <li><a href="#">Pages</a>
                                     <ul class="dropdown">
-                                        <li><a href="./room-details.html">Room Details</a></li>
-                                        <li><a href="./blog-details.html">Blog Details</a></li>
-                                        <li><a href="#">Family Room</a></li>
-                                        <li><a href="#">Premium Room</a></li>
+                                        <li><a href="./index.html">- Home</a></li>
+                                        <li><a href="./room.html">- Rooms</a></li>
+                                        <li><a href="./single-room.html">- Single Rooms</a></li>
+                                        <li><a href="./about.html">- About Us</a></li>
+                                        <li><a href="./blog.html">- Blog</a></li>
+                                        <li><a href="./single-blog.html">- Single Blog</a></li>
+                                        <li><a href="./contact.html">- Contact</a></li>
+                                        <li><a href="#">- Dropdown</a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">- Dropdown Item</a></li>
+                                                <li><a href="#">- Dropdown Item</a></li>
+                                                <li><a href="#">- Dropdown Item</a></li>
+                                                <li><a href="#">- Dropdown Item</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li><a href="./blog.html">News</a></li>
                                 <li><a href="./contact.html">Contact</a></li>
                             </ul>
-                        </nav>
-                        <div class="nav-right search-switch">
-                            <i class="icon_search"></i>
+
+                            <!-- Search -->
+                            <div class="search-btn ml-4">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+
+                            <!-- Book Now -->
+                            <div class="book-now-btn ml-3 ml-lg-5">
+                                <a href="#">Book Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            </div>
                         </div>
+                        <!-- Nav End -->
                     </div>
-                </div>
+                </nav>
             </div>
         </div>
     </div>
 </header>
-<!-- Header End -->
+<!-- Header Area End -->
