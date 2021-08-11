@@ -5,8 +5,16 @@ from ..models.room_hotel import RoomCategory, RoomHotel
 from ..models.booking import BookingRoom
 from ..models.reservation import Reservation
 from ..models.price_plan import PricePlan
+from ..models.admin import Admin
 
 
+
+class AdminForm(forms.ModelForm):
+    class Meta:
+        db_table = Admin
+        managed = True
+        verbose_name = 'Admin'
+        verbose_name_plural = 'Admins'
 
 
 class HotelCategoryForm(forms.ModelForm):
